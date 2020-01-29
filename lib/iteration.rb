@@ -31,7 +31,7 @@ def find_greater_pair(src)
         end
         element_index += 2 
       end
-      outer_results.push(inner_results.join)
+      outer_results.push(inner_results.flatten)
       row_index += 1
     end
     outer_results
