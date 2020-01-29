@@ -52,7 +52,7 @@ def total_even_pairs(src)
       if is_it_even % 2 == 0
         even_numbers.push(src[row_index][0], src[row_index][1])
         
-        total += even_numbers[row_index][element_index]
+        total += even_numbers
       element_index += 2
       end
     row_index += 1
