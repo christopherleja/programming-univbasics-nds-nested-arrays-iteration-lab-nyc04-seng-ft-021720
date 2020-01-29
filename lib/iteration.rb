@@ -47,9 +47,9 @@ def total_even_pairs(src)
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
-      even_or_odd = (src[row_index][1] + src[row_index][2]) % 2
+      even_or_odd = (src[row_index][0] + src[row_index][1]) % 2
       if even_or_odd == 0
-        total += even_or_odd
+        total += (src[row_index][0] + src[row_index][1])
       element_index += 2
       end
     row_index += 1
