@@ -52,7 +52,7 @@ def total_even_pairs(src)
       element_index += 2
       end
     row_index += 1
-    end
+  #  end
   end
   total
 end
