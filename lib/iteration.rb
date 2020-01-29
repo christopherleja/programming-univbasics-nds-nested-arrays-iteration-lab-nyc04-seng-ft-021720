@@ -42,7 +42,6 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
-  even_numbers = [] 
   total = 0
   row_index = 0
   while row_index < src.count do
@@ -50,9 +49,7 @@ def total_even_pairs(src)
     while element_index < src[row_index].count do
       is_it_even = src[row_index][0] + src[row_index][1]
       if is_it_even % 2 == 0
-        even_numbers.push(src[row_index][0], src[row_index][1])
-        
-        total += even_numbers
+        total += src[row_index][0] + src[row_index][1])
       element_index += 2
       end
     row_index += 1
