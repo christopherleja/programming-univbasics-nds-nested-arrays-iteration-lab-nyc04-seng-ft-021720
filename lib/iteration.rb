@@ -25,13 +25,12 @@ def find_greater_pair(src)
       inner_results = []
       while element_index < src[row_index].count do
         if src[row_index][0] < src[row_index][1]
-          inner_results.push(src[row_index][1])
+          inner_results.push.concat(src[row_index][1])
         else
-          inner_results.push(src[row_index][0])
+          inner_results.push.concat(src[row_index][0])
         end
         element_index += 2 
       end
-      inner_results.concat
       outer_results.push(inner_results)
       row_index += 1
     end
