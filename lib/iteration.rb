@@ -43,13 +43,14 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   even_numbers = [] 
-  total = []
+  total = 0
   row_index = 0
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
       if (src[row_index][0] + src[row_index][1]) % 2 == 0
         even_numbers.push(src[row_index][0], src[row_index][1])
+        
         total += even_numbers[row_index][element_index]
       element_index += 2
       end
